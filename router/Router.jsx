@@ -6,6 +6,7 @@ import { Page1DetailA } from "../src/Page1DetailA";
 import { Page1DetailB } from "../src/Page1DetailB";
 import { Page1Routes } from "./Page1Routes";
 import { Page2Routes } from "./Page2Routes";
+import { Page404 } from "../src/Page404";
 
 export const Router = () => {
   return (
@@ -46,6 +47,9 @@ export const Router = () => {
           </Switch>
         )}
       />
+      <Route path="*">
+        <Page404 />
+      </Route>
     </Switch>
   );
 };
