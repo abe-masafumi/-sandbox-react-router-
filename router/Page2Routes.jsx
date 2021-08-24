@@ -1,4 +1,4 @@
-import { Page2 } from "../src/Page1";
+import { Page2 } from "../src/Page2";
 import { UrlParameter } from "../src/UrlParameter";
 
 export const Page2Routes = [
@@ -8,7 +8,7 @@ export const Page2Routes = [
     children: <Page2 />
   },
   {
-    path: "/",
+    path: "/:id",
     exact: false,
     children: <UrlParameter />
   }
