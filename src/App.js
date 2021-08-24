@@ -12,7 +12,6 @@ export default function App() {
         <Link to="/page2">Page2</Link>
         <br />
       </div>
-
       <Router />
     </BrowserRouter>
   );
